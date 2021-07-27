@@ -14,4 +14,8 @@ resource "azurerm_virtual_network" "vnet1" {
   resource_group_name = azurerm_resource_group.rg1.name
   location            = azurerm_resource_group.rg1.location
   address_space       = ["10.0.0.0/16"]
+subnet {
+    name = "snet1"
+	address_prefix = "10.0.0.0/24"
+}
 }
