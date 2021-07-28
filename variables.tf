@@ -22,6 +22,33 @@ variable "tags" {
       Dept = "IT"
   }
 }
+variable "azurerm_public_ip" {
+  description = "Public-IP Name"
+  default     = "pub-ip"
+}
+variable "azurerm_network_interface" {
+  description = "Name of NIC card"
+  default     = "NIC1"
+}
+variable "azurerm_network_security_group" {
+  description = "Name of NSG"
+  default     = "NSG1"
+}
+variable "admin_ID" {
+  description = "Admin user name"
+  default     = "sandeep"
+}
+variable "admin_pwd" {
+  description = "password for user"
+  default     = "Sandeep@12345678"
+}
+variable "virtual_machine_name" {
+  description = "name of vm"
+  default     = "win_vm_01"
+}
+
+
+
 
 
 
