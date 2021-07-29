@@ -1,3 +1,8 @@
+variable "client_secret" {
+  description = "Secret value"
+  default     = ""
+}
+
 variable "azurerm_resource_group" {
   description = "Name resource group"
   default     = "sst02rg"
@@ -40,12 +45,17 @@ variable "admin_ID" {
 }
 variable "admin_pwd" {
   description = "password for user"
-  default     = "Sandeep@12345678"
+  default     = ""
 }
 variable "virtual_machine_name" {
   description = "name of vm"
   default     = "win_vm_01"
 }
+variable "data_disk" {
+  description = "Data disk name"
+  default     = "datadisk1"
+}
+
 
 
 
